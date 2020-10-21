@@ -7,7 +7,6 @@ void Allocator::makeAllocator(std::size_t maxSize) {
         delete[] init;
     }
     mySize = maxSize;
-    //maybe check size for negat cases
     init = new char[mySize];
     offset = init;
 }
