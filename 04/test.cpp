@@ -58,16 +58,16 @@ void ineqTest() {
 
 void streamTest() {
     std::fstream file;
-	file.open("file.txt", std::ios::out);
-	BigInt num("14345547080");
-	file << num;
-	file.close();
-	file.open("file.txt", std::ios::in);
-	std::string str;
-	std::getline(file, str);
-	BigInt num1(str);
-	assert(num == num1);
-	file.close();
+    file.open("file.txt", std::ios::out);
+    BigInt num("14345547080");
+    file << num;
+    file.close();
+    file.open("file.txt", std::ios::in);
+    std::string str;
+    std::getline(file, str);
+    BigInt num1(str);
+    assert(num == num1);
+    file.close();
 }
     
 
